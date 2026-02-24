@@ -23,6 +23,15 @@ const CUSTOMER_SITES = {
     api: 'http://slapibf.com/api.php/provide/vod',
     name: '森林资源',
   },
+    ruyi: {
+    api: 'https://cj.rycjapi.com/api.php/provide/vod',
+    name: '如意资源',
+  },
+  ffzy: {
+    api: 'http://ffzy5.tv/api.php/provide/vod',
+    name: '非凡影视',
+    detail: 'http://ffzy5.tv',
+  },
 };
 
 // 调用全局方法合并
