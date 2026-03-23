@@ -1,5 +1,5 @@
 // 全局变量
-const dftSelectAPI = ['ffzy','ruyi','senlin','shandian2','tiankong','baofeng','liangzi2','feifan']
+const dftSelectAPI = ['ffzy','ruyi','senlin','shandian2','baofeng','liangzi2','feifan','hongniu','guangsu','xinlang','uku2','aidan']
 let selectedAPIs = JSON.parse(localStorage.getItem('selectedAPIs')) || dftSelectAPI; // 默认选中资源
 let customAPIs = JSON.parse(localStorage.getItem('customAPIs') || '[]'); // 存储自定义API列表
 

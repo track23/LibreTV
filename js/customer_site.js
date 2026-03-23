@@ -1,6 +1,6 @@
 const CUSTOMER_SITES = {
   feifan: {
-    api: 'http://cj.ffzyapi.com/api.php/provide/vod/',
+    api: 'https://cj.ffzyapi.com/api.php/provide/vod/',
     name: '非凡|点播',
   },
   liangzi2: {
@@ -10,10 +10,6 @@ const CUSTOMER_SITES = {
   baofeng: {
     api: 'https://bfzyapi.com/api.php/provide/vod/',
     name: '暴风|点播',
-  },
-  tiankong: {
-    api: 'http://m3u8.tiankongapi.com/api.php/provide/vod/from/tkm3u8',
-    name: '天空資源',
   },
   shandian2: {
     api: 'http://sdzyapi.com/api.php/provide/vod',
@@ -27,10 +23,30 @@ const CUSTOMER_SITES = {
     api: 'https://cj.rycjapi.com/api.php/provide/vod',
     name: '如意资源',
   },
+  aidan: {
+    api: 'http://lovedan.net/api.php/provide/vod',
+    name: '艾旦影视',
+  },
   ffzy: {
     api: 'http://ffzy5.tv/api.php/provide/vod',
     name: '非凡影视',
     detail: 'http://ffzy5.tv',
+  },
+  hongniu: {
+    api: 'http://hongniuzy2.com/api.php/provide/vod/from/hnm3u8',
+    name: '紅牛資源',
+  },
+  guangsu: {
+    api: 'http://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8',
+    name: '光速资源',
+  },
+  xinlang: {
+    api: 'https://api.xinlangapi.com/xinlangapi.php/provide/vod/',
+    name: '新浪|点播',
+  },
+  uku2: {
+    api: 'https://api.ukuapi.com/api.php/provide/vod/',
+    name: 'U酷|点播',
   },
 };
 
