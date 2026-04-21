@@ -1,58 +1,53 @@
 const CUSTOMER_SITES = {
-  feifan: {
-    api: 'https://cj.ffzyapi.com/api.php/provide/vod/',
-    name: '非凡|点播',
+  lz: {
+    name: '量子資源',
+    api: 'https://cj.lziapi.com/api.php/provide/vod/from/lzm3u8'
   },
-  liangzi2: {
-    api: 'https://cj.lziapi.com/api.php/provide/vod/',
-    name: '量子|点播',
+  wl: {
+    name: '卧龙资源',
+    api: 'https://collect.wolongzyw.com/api.php/provide/vod'
   },
-  baofeng: {
-    api: 'https://bfzyapi.com/api.php/provide/vod/',
+  jy: {
+    name: '金鹰资源',
+    api: 'https://jyzyapi.com/provide/vod/from/jinyingm3u8'
+  },
+  360: {
+    name: '360|点播',
+    api: 'https://360zy.com/api.php/provide/vod'
+  },
+  ikun: {
+    name: 'ikun|点播',
+    api: 'https://ikunzyapi.com/api.php/provide/vod'
+  },
+  bf: {
     name: '暴风|点播',
+    api: 'https://bfzyapi.com/api.php/provide/vod'
   },
-  shandian2: {
-    api: 'http://sdzyapi.com/api.php/provide/vod',
-    name: '闪电资源',
+  pl: {
+    name: '飘零|点播',
+    api: 'https://p2100.net/api.php/provide/vod'
   },
-  senlin: {
-    api: 'http://slapibf.com/api.php/provide/vod',
-    name: '森林资源',
+  wj: {
+    name: '无尽|点播',
+    api: 'https://api.wujinapi.com/api.php/provide/vod'
   },
-    ruyi: {
-    api: 'https://cj.rycjapi.com/api.php/provide/vod',
+  md: {
+    name: '魔都|点播',
+    api: 'https://caiji.moduapi.cc/api.php/provide/vod'
+  },
+  ry: {
     name: '如意资源',
+    api: 'https://cj.rycjapi.com/api.php/provide/vod'
   },
-  aidan: {
-    api: 'http://lovedan.net/api.php/provide/vod',
-    name: '艾旦影视',
-  },
-  ffzy: {
-    api: 'http://ffzy5.tv/api.php/provide/vod',
-    name: '非凡影视',
-    detail: 'http://ffzy5.tv',
-  },
-  hongniu: {
-    api: 'http://hongniuzy2.com/api.php/provide/vod/from/hnm3u8',
-    name: '紅牛資源',
-  },
-  guangsu: {
-    api: 'http://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8',
-    name: '光速资源',
-  },
-  xinlang: {
-    api: 'https://api.xinlangapi.com/xinlangapi.php/provide/vod/',
-    name: '新浪|点播',
-  },
-  uku2: {
-    api: 'https://api.ukuapi.com/api.php/provide/vod/',
-    name: 'U酷|点播',
-  },
+  zd: {
+    name: '最大资源',
+    api: 'https://api.zuidapi.com/api.php/provide/vod'
+  }
 };
 
 // 调用全局方法合并
 if (window.extendAPISites) {
-    window.extendAPISites(CUSTOMER_SITES);
+  window.extendAPISites(CUSTOMER_SITES);
 } else {
-    console.error("错误：请先加载 config.js！");
+  console.error("错误：请先加载 config.js！");
 }
