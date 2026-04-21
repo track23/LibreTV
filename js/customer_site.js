@@ -1,4 +1,8 @@
 const CUSTOMER_SITES = {
+  aqy: {
+    name: "爱奇艺",
+    api: "https://iqiyizyapi.com/api.php/provide/vod",
+  },
   lz: {
     name: '量子資源',
     api: 'https://cj.lziapi.com/api.php/provide/vod/from/lzm3u8'
