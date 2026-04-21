@@ -3,7 +3,7 @@ export default async (request, context) => {
   const url = new URL(request.url);
   
   // Only process HTML pages
-  const isHtmlPage = url.pathname.endsWith('.html') || url.pathname === '/';
+  const isHtmlPage = url.pathname.endsWith('.html') || url.pathname === '/'||url.pathname.startsWith('/s=');
   if (!isHtmlPage) {
     return; // Let the request pass through unchanged
   }
