@@ -1,5 +1,5 @@
 // 全局变量
-const dftSelectAPI = ['360', 'aqy', 'lz', 'wl', 'jy', 'ikun', 'bf', 'pl', 'wj', 'md', 'ry', 'zd', 'my'];
+const dftSelectAPI = ['360', 'aqy', 'lz', 'wl', 'jy', 'ikun', 'bf', 'pl', 'wj', 'md', 'ry', 'zd', 'my', 'sb'];
 let selectedAPIs = JSON.parse(localStorage.getItem('selectedAPIs')) || dftSelectAPI; // 默认选中资源
 let customAPIs = JSON.parse(localStorage.getItem('customAPIs') || '[]'); // 存储自定义API列表
 

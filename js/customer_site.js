@@ -50,6 +50,10 @@ const CUSTOMER_SITES = {
   my: {
     name: '猫眼',
     api: 'https://api.maoyanapi.top/api.php/provide/vod'
+  },
+  sb: {
+    name: '速播',
+    api: 'https://subocaiji.com/api.php/provide/vod'
   }
 };
 
