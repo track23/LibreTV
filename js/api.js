@@ -156,12 +156,17 @@ async function handleApiRequest(url) {
                     if (playSources.length > 0) {
                         const mainSource = playSources[0];
                         const episodeList = mainSource.split('#');
+                        const check_ep = (ep)=>{
+                            if(!ep) return ''
+                            return ep.endsWith('/index.m3u8')? ep : ep + '/index.m3u8'
+                        }
                         
                         // 从每个集数中提取URL
                         episodes = episodeList.map(ep => {
                             const parts = ep.split('$');
                             // 返回URL部分(通常是第二部分，如果有的话)
-                            return parts.length > 1 ? parts[1] : '';
+                            const ep_item = parts.length > 1 ? parts[1] : '';
+                            return check_ep(ep_item)
                         }).filter(url => url && (url.startsWith('http://') || url.startsWith('https://')));
                     }
                 }
