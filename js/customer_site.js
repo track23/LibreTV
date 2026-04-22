@@ -46,6 +46,10 @@ const CUSTOMER_SITES = {
   zd: {
     name: '最大资源',
     api: 'https://api.zuidapi.com/api.php/provide/vod'
+  },
+  my: {
+    name: '猫眼',
+    api: 'https://api.maoyanapi.top/api.php/provide/vod'
   }
 };
 
